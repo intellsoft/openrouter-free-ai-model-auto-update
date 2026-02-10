@@ -1,1 +1,0 @@
-# openrouter-free-ai-model-auto-update
