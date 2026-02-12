@@ -18,10 +18,10 @@
 
 ## 📂 فایل‌های موجود
 
-- `free_models.json`  
+- `ai-desc.json`  
   فهرست کامل مدل‌های رایگان به‌همراه مشخصات
 
-- `free_models.txt`  
+- `ai.txt`  
   لیست ساده نام مدل‌ها (مناسب استفاده مستقیم در تنظیمات)
 
 ---
@@ -38,12 +38,12 @@
 ```python
 import requests
 
-url = "https://raw.githubusercontent.com/intellsoft/openrouter-free-ai-model-auto-update/main/free_models.json"
+url = "https://raw.githubusercontent.com/intellsoft/openrouter-free-ai-model-auto-update/main/ai-desc.json"
 
 response = requests.get(url, timeout=10)
 response.raise_for_status()
 
-with open("free_models.json", "w", encoding="utf-8") as f:
+with open("ai-desc.json", "w", encoding="utf-8") as f:
     f.write(response.text)
 
 print("Models list downloaded successfully.")
@@ -56,14 +56,14 @@ print("Models list downloaded successfully.")
 ```php
 <?php
 
-$url = "https://raw.githubusercontent.com/intellsoft/openrouter-free-ai-model-auto-update/main/free_models.json";
+$url = "https://raw.githubusercontent.com/intellsoft/openrouter-free-ai-model-auto-update/main/ai-desc.json";
 $data = file_get_contents($url);
 
 if ($data === false) {
     die("Download failed");
 }
 
-file_put_contents("free_models.json", $data);
+file_put_contents("ai-desc.json", $data);
 echo "Models list downloaded successfully";
 ```
 
@@ -111,7 +111,7 @@ Offer a simple, reliable, and always up-to-date source of free OpenRouter models
 
 ## 📂 Included Files
 
-* `free_models.json`
+* `ai-desc.json`
   Full list of free models with metadata
 
 * `free_models.txt`
@@ -131,12 +131,12 @@ It is recommended to update them periodically (e.g. daily or weekly).
 ```python
 import requests
 
-url = "https://raw.githubusercontent.com/intellsoft/openrouter-free-ai-model-auto-update/main/free_models.json"
+url = "https://raw.githubusercontent.com/intellsoft/openrouter-free-ai-model-auto-update/main/ai-desc.json"
 
 response = requests.get(url, timeout=10)
 response.raise_for_status()
 
-with open("free_models.json", "w", encoding="utf-8") as f:
+with open("ai-desc.json", "w", encoding="utf-8") as f:
     f.write(response.text)
 
 print("Models list downloaded successfully.")
@@ -149,14 +149,14 @@ print("Models list downloaded successfully.")
 ```php
 <?php
 
-$url = "https://raw.githubusercontent.com/intellsoft/openrouter-free-ai-model-auto-update/main/free_models.json";
+$url = "https://raw.githubusercontent.com/intellsoft/openrouter-free-ai-model-auto-update/main/ai-desc.json";
 $data = file_get_contents($url);
 
 if ($data === false) {
     die("Download failed");
 }
 
-file_put_contents("free_models.json", $data);
+file_put_contents("ai-desc.json", $data);
 echo "Models list downloaded successfully";
 ```
 
